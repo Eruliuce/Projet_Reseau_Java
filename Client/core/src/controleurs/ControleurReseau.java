@@ -51,6 +51,7 @@ public class ControleurReseau extends Thread
 			String ligne = bufferReader.readLine();
 			if(!ligne.equals("none"))
 			{
+				System.out.println("test");
 				float x = Float.parseFloat(ligne.substring(0, ligne.indexOf(':') - 1));
 				float y = Float.parseFloat(ligne.substring(0, ligne.indexOf(':') + 1));
 				none = false;
